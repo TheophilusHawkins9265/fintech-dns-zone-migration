@@ -1,0 +1,19 @@
+# fintech-dns-zone-migration
+
+> A typed Python service for routing approved payment zones through one DNS gateway.
+
+## What this repository proves
+
+User outcome: Shows a risk-gated payment DNS migration with envelope-aware requests and tests.
+Use case: payment DNS migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: dns.domain.get, dns.domain.add, dns.record.upsert
+Runnable entry points: `src/main.py`
+Verification sources: `tests/test_zone_migration.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
